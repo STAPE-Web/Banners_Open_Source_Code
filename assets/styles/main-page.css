@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+::-webkit-scrollbar{
+  display: none;
+}
+:root {
+  --text-color: #111;
+  --bg-color: #b9b3a9;
+}
+*{
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  color: var(--text-color);
+  background-image: linear-gradient(104.44deg, #FABEFF 9.52%, #D0F7FF 93.35%);
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+header{
+  position: fixed;
+  width: 100%;
+  height: 6%;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+header ul li{
+  list-style: none;
+  color: #fff;
+  display: inline-block;
+}
+header .left{
+  position: fixed;
+  left: 3%;
+  font-size: 1.5vh;
+}
+header .left li{
+  margin: 2vh;
+}
+header .right{
+  position: fixed;
+  right: 3%;
+  font-size: 1.5vh;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+section:not(#sectionPin) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
+img {
+  height: 80vh;
+  width: auto;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 4; 
+  color: #fff;  
+}
+.text-block-1{
+  position: absolute;
+  bottom: 10vw;
+  left: 10vw;
+  width: 500px;
+  line-height: 1.5;
+}
+.button-block-1{
+  font-size: 18px;
+  background-image: linear-gradient(180deg, #FF8CFA 0%, #6AE2FC 100%);
+  padding: 20px 0 20px 45px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+h2 {
+  font-size: 2rem;
+  max-width: 500px;
+  color: #fff;
+}
+#sectionPin {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+}
+.pin-wrap > * {
+  min-width: 60vw;
+  padding: 0 5vw;
+}
+p {
+  position: absolute;
+  bottom: 10vw;
+  right: 10vw;
+  width: 200px;
+  line-height: 1.5;
+  color: #fff;
+}  
+.footer p{
+  position: absolute;
+  width: 300px;
+  text-align: center;
+}
+.footer img{
+  width: 500px;
+  height: 500px;
+}
+.footer h2{
+  font-size: 1.9rem;
+  width: 300px;
+  text-align: center;
+}
+.footer a{
+  text-decoration: none;
+  color: transparent;    
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(180deg, #FF8CFA 0%, #6AE2FC 100%);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 16vw;
+  }
+}
