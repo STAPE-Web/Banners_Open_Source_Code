@@ -131,6 +131,7 @@ p {
   position: absolute;
   width: 300px;
   text-align: center;
+  font-size: 1.2em;
 }
 .footer img{
   width: 500px;
@@ -146,7 +147,7 @@ p {
   color: transparent;    
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(180deg, #FF8CFA 0%, #6AE2FC 100%);
+  background-image: linear-gradient(90deg, #FF8CFA, #6AE2FC);
 }
 
 @media screen and (max-width: 768px) {

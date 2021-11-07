@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  outline: none;
+}
+body{
+  background: #000;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6%;
+  background: rgba(40, 40, 40, 0.8);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+header ul li{
+  list-style: none;
+  color: #fff;
+  display: inline-block;
+}
+header .left{
+  position: fixed;
+  left: 3%;
+  font-size: 1.5vh;
+}
+header .left li{
+  margin: 2vh;
+}
+header .right{
+  position: fixed;
+  right: 3%;
+  font-size: 1.5vh;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.container{
+  padding-top: 10vh;
+  width: 80%;
+  margin: 0 auto;
+}
+.container h1{
+  background-image: linear-gradient(90deg, #FF8CFA, #6AE2FC);
+  border-radius: 30px 30px 0 0 ;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.container p{
+  background-image: linear-gradient(90deg, #FF8CFA, #6AE2FC);
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+}
+.container h3{
+  background-image: linear-gradient(90deg, #FF8CFA, #6AE2FC);
+  border-radius: 0 0 30px 30px;
+  padding: 20px;
+  color: #fff;
+}
+.container a{
+  text-decoration: none;
+  color: #fff;
+  background: #72cad6;
+}
